@@ -4,7 +4,7 @@ export PATH=$PATH:/usr/local/bin/
 #docker installation
 
 #kubectl installation
-curl -LO https://storage.googleapis.com/kubernates-release/v1.8.7/bin/linux/amd64/kubectl
+curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.8.7/bin/linux/amd64/kubectl
 chmod +x ./kubectl
 sudo mv ./kubectl /usr/local/bin/kubectl
 kubectl version
