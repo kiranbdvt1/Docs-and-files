@@ -1,0 +1,10 @@
+sudo -i
+1- kubectl get ns
+2-kubectl delete ns devops3
+3- kubectl create ns devops3
+4-kubectl get ns
+5- kubectl create -f jenkins.yaml -n devops3 // create jenkins pods
+6-kubectl get deployment -n devops
+7-  kubectl get pods -n devops3
+8-kubectl exec -it -n devops3 jenkins-7f4d64fbf8-rcpfp bash
+
