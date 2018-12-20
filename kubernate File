@@ -91,17 +91,19 @@ kubectl get svc
 minikube service sampleapp --url
 curl http://127.0.0.1:30002/api/books
 
-
 kubernate dashboard
+*********************************************
+
+kubernate dashboard (run this in cluster)
 kubectl create -f https://raw.githubusercontent.com/kubernetes/dashboard/master/src/deploy/recommended/kubernetes-dashboard.yaml
 
-kubectl proxy
+kubectl proxy (copy to url)
 https://api.aigdevopscoe.net/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/ 
 
-below command for password to kubecluster
+below command for password to kubecluster 
 kops get secrets kube --type secret -o plaintext
 
-below command for password to kubedashbaord
+below command for password to kubedashbaord token 
 kops get secrets admin --type secret -o plaintext
 
 
